@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claculator</title>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="calculator">
+            <form >
+                <div class="display">
+                    <input id="result" type="text" name="display" readonly >
+                </div>
+                <div>
+                    <input id="op" type="button" value="AC" onclick="clearSreen()">
+                    <input id="op" type="button" value="DE" onclick="Delete()">
+                    <input type="button" value="." onclick="displyContent('.')">
+                    <input id="op" type="button" value="/" onclick="displyContent('/')">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="displyContent('7')">
+                    <input type="button" value="8" onclick="displyContent('8')">
+                    <input type="button" value="9" onclick="displyContent('9')">
+                    <input id="op" type="button" value="*" onclick="displyContent('*')">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="displyContent('4')">
+                    <input type="button" value="5" onclick="displyContent('5')">
+                    <input type="button" value="6" onclick="displyContent('6')">
+                    <input id="op" type="button" value="-" onclick="displyContent('-')">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="displyContent('1')">
+                    <input type="button" value="2" onclick="displyContent('2')">
+                    <input type="button" value="3" onclick="displyContent('3')">
+                    <input id="op" type="button" value="+" onclick="displyContent('+')">
+                </div>
+                <div>
+                    <input type="button" value="0" onclick="displyContent('0')">
+                    <input type="button" value="00" onclick="displyContent('00')">
+                    <input  id="equal" type="button" value="=" onclick="finalOutput()">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
